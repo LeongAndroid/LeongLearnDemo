@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LeongLearnDemo</string>
+    <string name="event_bus">Event Bus</string>
+    <string name="rxjava">Rxjava</string>
+    <string name="retrofit">retrofit2</string>
+    <string name="oauth">diycode oauth</string>
+    <string name="greendao">GreenDao</string>
+    <string name="okhttp3">okhttp3</string>
+    <string name="volley">volley</string>
+</resources>
