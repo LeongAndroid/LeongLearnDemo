@@ -25,6 +25,7 @@
         <activity android:name=".greendao.GreenDaoActivity" android:label="@string/greendao"/>
         <activity android:name=".okhttp3.OkhttpActivity" android:label="@string/okhttp3"/>
         <activity android:name=".volley.VolleyActivity" android:label="@string/volley"/>
+        <activity android:name=".recycleview.LeongRecycleViewActivity" android:label="@string/app_name"/>
     </application>
 
 </manifest>

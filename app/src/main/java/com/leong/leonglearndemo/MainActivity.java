@@ -27,6 +27,7 @@ import com.leong.leonglearndemo.eventbus.EventBusActivity1;
 import com.leong.leonglearndemo.greendao.GreenDaoActivity;
 import com.leong.leonglearndemo.oauth_diycode.LoginActivity;
 import com.leong.leonglearndemo.okhttp3.OkhttpActivity;
+import com.leong.leonglearndemo.recycleview.LeongRecycleViewActivity;
 import com.leong.leonglearndemo.retrofit2.RetrofitActivity;
 import com.leong.leonglearndemo.rxjava.HelloRxjava;
 import com.leong.leonglearndemo.volley.VolleyActivity;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private Button greenDaoButton = null;
     private Button okhttpButton = null;
     private Button volleyButton = null;
+    private Button recyclerButton = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,6 +119,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, VolleyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        recyclerButton = (Button)this.findViewById(R.id.recycler);
+        recyclerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, LeongRecycleViewActivity.class);
                 startActivity(intent);
             }
         });
